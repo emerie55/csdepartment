@@ -1,0 +1,100 @@
+#openChat{
+    color: #0080C0;
+    font-size: 4em;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+#chatDiv{
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    height: 320px;
+    width: 300px;
+    background-color: #ffffff;
+    z-index: 3001;
+}
+#chatDisplay{
+    height: 190px;
+    overflow: auto;
+}
+.inputDiv{
+    margin: 10px auto;
+}
+.closeChat{
+    float:right;
+}
+.chatOpen{
+    display:block;
+}
+.chatClose{
+    display: none;
+}
+
+.cad{
+    height:100%; 
+    padding:0 10px; 
+    border: none;
+    border:1px solid #337ab7;
+}
+
+.cad2{
+    height:270%;
+     padding:5px; 
+     border:1px solid #337ab7;
+}
+
+
+/* ===================== MEDIA QUERY =========================== */
+
+@media (max-width : 798px){
+
+    #chatDiv{
+        position: fixed;
+        bottom: 0;
+        right: 0px;
+        height: 100%;
+        width: 100vw;
+        background-color: #ffffff;
+        z-index: 3000;
+    }
+    
+    #chatDisplay{
+        height: 100%;
+        overflow: auto;
+    }
+    .inputDiv{
+        margin: 50px auto;
+        font-size: 1.9rem;
+        
+    }
+    .closeChat{
+        float:right;
+    }
+    .chatOpen{
+        display:block;
+    }
+    .chatClose{
+        display: none;
+    }
+    
+    .cad{
+        height:100vh; 
+        padding:0 10px; 
+        border: none;
+    }
+    .cad2{
+        height:100%;
+         padding:5px; 
+         border: none;
+    }
+
+    .cardhead{
+        font-size: 20px;
+
+    }
+    
+    
+
+}

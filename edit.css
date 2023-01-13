@@ -1,0 +1,509 @@
+@font-face{
+	font-family: ok;
+	src:url('fonts/d.ttf');
+	font-family: ok;
+}
+
+/* ============ Video background =============== */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #66b561; */
+  mix-blend-mode: overlay;
+}
+
+#jss
+{
+	background: #306;
+}
+
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #337ab7;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 2.0rem;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  text-align: center;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #444;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+  
+}
+.text a:hover
+{
+  letter-spacing: 4px;
+  background: #337ab7;
+  color: #fff;
+}
+
+
+/* =============== end ==================== */
+
+.cover{
+	padding:10px;
+	background-image:url('img/bk.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	height:auto;
+}
+
+.jumb{
+	font-family: ok;
+	opacity:0.9;
+	border-radius: 5px;
+	background:#FAEBD7;
+
+}
+
+.lab{
+	display: inline-block;
+	padding:10px;
+	font-size: 18px;
+	cursor: help;
+	transition: 2s;
+}
+
+.lab:hover{
+	background-color: transparent;
+	color:black;
+	cursor: help;
+}
+#outputpix{
+    width:50%;
+    height:145px;
+    border-radius:100px;
+    margin:10px;
+}
+.lo{
+padding: 5px;
+box-shadow: 3px 1px 5px 6px gray;
+}
+.lol{
+padding: 5px;
+width:300px;
+box-shadow: 1px 1px 5px 4px #67c3dd;
+}
+
+.lin{
+	background-color: #337ab7;
+	color: white;
+	padding:3px;
+	border: 0px solid black;
+	border-radius: 10px;
+	text-decoration: none;
+}
+.lin:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.lin2{
+	background-color: gray;
+	color: white;
+	padding:3px;
+	border: 0px solid black;
+	border-radius: 10px;
+	text-decoration: none;
+}
+.lin2:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.eye{
+	position: absolute;
+	right: 5px;
+	bottom: 15px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+
+
+/*====================================== INPUT BOX ANIMATION ==============================*/
+
+.form { 
+	width:100%;
+	height:70px;
+	position:relative;
+	overflow:hidden;	
+}
+
+.form input{
+	width:100%;
+	height:100%;
+	color:#444;
+	padding-top:20px;
+	border:none;
+	outline:none;
+	background: none;
+	
+}
+
+.form label{
+	position:absolute;
+	bottom:0px;
+	left:0%;
+	width:100%;
+	height:100%;
+	pointer-events:none;
+	border-bottom:1px solid #ccc;
+		
+}
+
+.form label::after{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:100%;
+	border-bottom:2px solid #3399CC;
+	left:0px;
+	bottom:-1px;
+	transform:translateX(-100%);
+	transition:transform 0.7s ease;	
+}
+
+.content-name{
+	position:absolute;
+	bottom:5px;
+	left:0px;
+	transition:all 0.7s ease;	
+}
+
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name{
+	transform:translateY(-150%);
+	font-size:13px;
+	color:#3399CC;
+}
+
+.form input:focus + .label-name::after, .form input:valid + .label-name::after{
+	transform:translateX(0%);
+}
+
+/*=================================== THE END =======================================*/	
+
+#h3 a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.colo{
+	border:1px solid #999;
+	margin-top: 15px;
+}
+
+.st_b{
+	color:#B22222;
+	font-size: 16px;
+}
+
+.st_ba{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.img{
+	margin: 30px 0 0 50px;
+	margin-top: 0px;
+}
+
+.s_log{
+	background: #3676a6;
+	padding: 0px 20px 20px 0px;
+	border-bottom: 2px solid #306;
+	animation: anim 0.7s linear 0s  alternate;
+}
+
+@keyframes anim {
+    0%   { margin-right: 100% ;}
+    
+}
+
+.s_logs{
+	background: #66b561;
+	padding: 0px 20px 20px 0px;
+	border-bottom: 2px solid #306;
+	animation: anim 0.7s linear 0s  alternate;
+}
+
+@keyframes anim {
+    0%   { margin-right: 100% ;}
+    
+}
+
+.comp{
+	resize: none;
+	margin-bottom: 20px ;
+	height: 100px;
+	width: 100%;
+	
+}
+
+
+.d_b:hover{
+	background: #66b561;
+	color: #fff;
+	transition: 0.6s linear;
+}
+.d_b:not(:hover){
+	transition: 0.6s all;
+}
+
+.d_bo:hover{
+	background: #3676a6;
+	color: #fff;
+	transition: 0.6s linear;
+}
+.d_bo:not(:hover){
+	transition: 0.6s all;
+}
+
+.smob
+{
+	display: none;
+}
+
+
+.smobs
+{
+	display: none;
+	
+}
+
+
+
+
+/* ===================== MEDIA QUERY =========================== */
+
+@media (max-width : 798px){
+
+.sidebar
+{
+	display: none;
+}
+
+.smob
+{
+	display: block;
+
+}
+
+.smob ul{
+	background:linear-gradient(top, #337ab7 15%, #66b561 100%) no-repeat;
+	background:-webkit-linear-gradient(top, #337ab7 15%, #66b561 100%) no-repeat;
+	background:-o-linear-gradient(top, #337ab7 15%, #66b561 100%) no-repeat;
+	height: 100vh;
+	padding-left: 0px;
+	display: none;
+	z-index: 1000;
+	position: fixed;
+	top: 127px;
+	width: 100vw;
+	
+}
+
+#naviconshow{
+	display: none;
+	cursor: pointer;
+}
+
+
+.smoblink li{
+	display: block;
+	font-size: 16px;
+	
+}
+
+
+
+
+.smoblink :hover{
+	background: #444;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	transition: 0.9s ease;
+}
+
+.smoblink :not(:hover){
+	color: #fff ;
+	padding: 10px;
+	transition: 0.9s ease;
+}
+
+.navimg{
+	display: block;
+	position: fixed;
+	right: 100px;
+	top: 40px;
+	font-size: 30px;
+	color:#fff;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.s_log{
+	background: #337ab7;
+	padding: 0px 20px 20px 0px;
+	border-bottom: 2px solid #306;
+	animation: anim 0.7s linear 0s  alternate;
+	position: fixed;
+	z-index: 900;
+	width: 100vw;
+	
+
+}
+
+.topcontent{
+	margin-top: 150px;
+}
+
+
+#act{
+	background: #444;
+	/* text-decoration: none; */
+	color: #fff;
+	padding: 10px;
+	
+}
+
+
+
+
+  
+/* ==============  ADMIN SECTION =================== */
+
+.smobs
+{
+	display: block;
+
+}
+
+.smobs ul{
+	background:linear-gradient(top, #66b561 15%, #337ab7  100%) no-repeat;
+	background:-webkit-linear-gradient(top, #66b561 15%, #337ab7  100%) no-repeat;
+	background:-o-linear-gradient(top, #66b561 15%, #337ab7  100%) no-repeat;
+	height: 100vh;
+	padding-left: 0px;
+	display: none;
+	z-index: 1000;
+	position: fixed;
+	top: 127px;
+	width: 100vw;
+}
+
+.smoblinks li{
+	display: block;
+	font-size: 16px;
+	
+}
+
+
+
+
+.smoblinks :hover{
+	background: #444;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	transition: 0.9s ease;
+}
+
+.smoblinks :not(:hover){
+	color: #fff ;
+	padding: 10px;
+	transition: 0.9s ease;
+}
+
+.s_logs{
+	background: #66b561;
+	padding: 0px 20px 20px 0px;
+	border-bottom: 2px solid #306;
+	animation: anim 0.7s linear 0s  alternate;
+	position: fixed;
+	z-index: 900;
+	width: 100vw;
+
+}
+
+/* ================= background vidoe ================== */
+
+.text h2
+{
+  font-size: 3em;
+}
+.text h3
+{
+  font-size: 2em;
+}
+
+
+}
